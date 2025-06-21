@@ -1,10 +1,11 @@
+#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
 int a, b;
 
 int main () {
 
-    scanf_s("%d %d", &a, &b);
+    scanf("%d %d", &a, &b);
 
     printf("%d", a+b);
 
