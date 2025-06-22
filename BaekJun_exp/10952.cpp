@@ -5,6 +5,7 @@ int amount=1;
 int a, b;
 int value[100];
 
+// 이런 문제가 아니였음 ㅋㅋㅋ
 
 int main () {
 
@@ -12,7 +13,7 @@ int main () {
         a=0;  b=0;
         scanf("%d %d", &a, &b);
         
-            value[i-1] = a+b;
+            value[i] = a+b;
 
         if (a==0 && b==0) {
             break;
@@ -21,7 +22,7 @@ int main () {
         }
     }
 
-    for (int j=1; j<=amount+1; j++) {
+    for (int j=1; j<=amount-1; j++) {
         printf("%d\n", value[j]);
     }
 
