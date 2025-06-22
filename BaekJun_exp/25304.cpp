@@ -12,7 +12,6 @@ int main () {
     for (int i=1; i<=huge; i++) {
         scanf("%d %d", &money, &amount);
         total = total + money*amount;
-        
         money = 0;
         amount = 0;
     }
