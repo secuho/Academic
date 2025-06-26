@@ -1,22 +1,18 @@
 #define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 
-char a[10], b[10];
-
-int num;
+int a, b;
 
 int main () {
 
     while (1) {
         scanf("%d %d", a, b);
 
-        if (a == "") {
+        if (a == ) {
             break;
         }
-        
-        num = int("a+b");
 
-        printf("%d\n", num);
+        printf("%d\n", );
     }
 
 return 0;
