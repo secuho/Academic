@@ -7,6 +7,7 @@ int main(void) {
 	int n1, n2, n3;
 	int median;
 
+	printf("세 개의 정수를 입력하세요: ");
 	scanf("%d %d %d", &n1, &n2, &n3);
 
 	median = get_median(n1, n2, n3);

@@ -7,6 +7,7 @@ int main(void) {
 	unsigned int num;
 	int temp, step=2;
 
+	printf("입력  > ");
 	scanf("%d", &num);
 
 	temp = sum(num);
@@ -20,7 +21,7 @@ int main(void) {
 		}
 	}
 
-	printf("%d %d\n", step, temp);
+	printf("출력  > %d %d\n", step, temp);
 
 return 0;
 
