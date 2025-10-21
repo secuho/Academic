@@ -8,7 +8,7 @@ int main(void) {
 	int temp, step=2;
 
 	printf("입력  > ");
-	scanf("%d", &num);
+	scanf("%u", &num);
 
 	temp = sum(num);
 
@@ -21,7 +21,7 @@ int main(void) {
 		}
 	}
 
-	printf("출력  > %d %d\n", step, temp);
+	printf("출력  > %d  %d\n", step, temp);
 
 return 0;
 
