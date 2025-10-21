@@ -10,6 +10,7 @@ int main() {
 	for (int i=3; i>=1; i--)
 		draw (i);
 
+return 0;
 }
 
 
