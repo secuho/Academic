@@ -18,6 +18,11 @@ int main(void)
 
     printf("Enter pattern length: ");
     scanf("%d", &patlen);
+    if ((patlen < 0) || (patlen > 10))
+    {
+        printf("Wrong Input ! \n");
+        return 0;
+    }
 
     char pat[patlen];
     printf("Enter pattern: ");
@@ -37,16 +42,27 @@ int main(void)
     for (int j = 0; j < 10; j++)
     {
         if (seq[j] == pat[0]) {
-            for (int i=1; i<=patlen; i++) {
-                if (valid == (patlen-1)) {
-                    count++;
-                    index[j] = 1;
+
+            valid = 0;
+
+            for (int i=1; i<patlen; i++) {
+
+                if ((j+i) > 9)
+                    break;
+                
+                if (seq[j+i] == pat[i])
+                    valid++;
+                else {
                     valid = 0;
                     break;
                 }
-                if (seq[j+i] == pat[i])
-                    valid++;
             }
+
+            if (valid == (patlen-1)) {
+                    count++;
+                    index[j] = 1;
+                }
+            
         }
     }
 
