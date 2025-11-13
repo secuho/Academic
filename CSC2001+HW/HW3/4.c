@@ -94,12 +94,12 @@ void print_days(int week) {
         {'T','h','u'}, {'F','r','i'}, {'S','a','t'}, {'S','u','n'}
     };
 
-    int index = week - 1;
+    int start_index = week - 1;
     
-    for (int i = index; i < 7; i++) {
+    for (int i = start_index; i < 7; i++) {
         printf("%c%c%c ", day_names[i][0], day_names[i][1], day_names[i][2]);
     }
-    for (int i = 0; i < index; i++) {
+    for (int i = 0; i < start_index; i++) {
         printf("%c%c%c ", day_names[i][0], day_names[i][1], day_names[i][2]);
     }
 }

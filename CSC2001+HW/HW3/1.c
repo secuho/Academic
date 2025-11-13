@@ -30,7 +30,7 @@ int main(void)
             seq2[i] -= 32;
     }
 
-    int len = 0, lenstore = 0, first, firststore;
+    int len = 0, lenstore = 0, first;
     for (int j = 0; j < 10; j++)
     {
         if (seq1[j] == seq2[j])
